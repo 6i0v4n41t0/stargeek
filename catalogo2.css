@@ -37,7 +37,7 @@ header>div>h1{
     column-gap: 30px;
 }
 
-.ladodireito> input[type="submit"]{
+.ladodireito> form> input[type="submit"]{
     background: #520F71;
     border-radius: 10px;
     font-style: normal;

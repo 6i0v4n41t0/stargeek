@@ -6,19 +6,18 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns:  0.8fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "h m f"
+      "f m"
     ;
 }
 
 header{
     grid-area: h;
-    background-image: url(img/Rectangle\ 17pag\ login.jpg);
 }
 
-main{
+aside{
     grid-area: m;
     background-color: #BCBCBC;
     display: flex;
@@ -91,7 +90,6 @@ form >.btn> input[type="submit"]{
     font-size: 1.9rem;
     line-height: 2.2rem;
     margin-top: 70px;
-    width: 47%;
     color: #FFFFFF;
 }
 

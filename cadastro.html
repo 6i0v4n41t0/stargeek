@@ -5,37 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="cadastre-se.css">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <a href=""><img src="img/home.png" alt=""></a>
-            <img src="img/logo.png">
-        </header>
         
         <main>
             <img src="img/lateralcadastre-se.png" alt="">
         </main>
         <aside>
             <h1>Cadastro</h1>
-
-            <form action="">
+            <div class="mensagem">realize seu cadastro</div>
+            <form id="formulario">
                 <label for="">Nome:</label>
-                <input type="nome" name="id">
+                <input type="nome" id="nome">
+
                 <label for="">E-mail:</label>
-                <input type="email" name="" id="">
+                <input type="email" name="email" id="email">
+
                 <label for="">Senha:</label>
-                <input type="password" name="" id="">
+                <input type="password" name="senha" id="senha">
+
                 <label for="">Confirmar Senha:</label>
-                <input type="password" name="" id="">
+                <input type="password" name="confirmar senha" id="confirmar senha">
+
                 <div class="btn"><input type="submit" value="Cadastre-se"></div>
             </form>
 
         </aside>
         
     </div>
-    
+    <script src="cadastro.js"></script>
 </body>
 </html>
