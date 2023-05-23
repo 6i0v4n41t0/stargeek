@@ -18,17 +18,21 @@
             <div class="back"><a href="index.html"><img src="img/back.png" alt=""></a></div>
             
             <h1>Cadastro do Item</h1>
-            <form action="catalogo2.html">
+            <form>
                 
-                <label for="">Título:</label>
-                <input type="email" name="" id="">
-                <label for="">Resumo:</label>
-                <input type="password" name="" id="">
-                <div class="btn2"><input type="file" value="Escolha a Imagem"></div>
-                <div class="btn"><input type="submit" value="Cadastrar"></div>
+                <label for="nome">Título</label>
+                <input type="text" name="nome" id="nome">
+                <label for="descricao">Resumo</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+                <button class="btncadastrar" id="btncadastrar"> Cadastrar</button>
+                
             </form>
+            <button id="btnclose" onclick="fechar()">Fechar</button>
 
         </main>
+        <script src="script.js"></script>
       
     </div>
 </body>
