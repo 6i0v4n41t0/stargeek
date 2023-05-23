@@ -18,9 +18,10 @@ function carregarCatalogo(){
 
     dados.forEach((elemento, indice) => {
         let divcard = document.createElement("div");
+        divcard.setAttribute("class", "card");
         divcard.innerHTML = `<div class="cardimagem"> <img src="img/${elemento.foto}"> </div> <div class="cardnome">${elemento.nome} <p>${elemento.descricao}</p></div> <div class="cardinfo">
-        <div class="editar"><i class="bi bi-pencil-fill" onclick="editar(${indice})"></i></div>
-        <div class="excluir"><i class="bi bi-trash3-fill" onclick="excluir(${indice})"></i></div>
+        <i  onclick="editar(${indice})">Editar</i>
+        <i  onclick="excluir(${indice})">Excluir</i>
         </div>`;
 
         cards.appendChild(divcard);
