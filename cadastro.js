@@ -5,6 +5,7 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const confirmarsenha = document.getElementById("confirmar senha");
 
+
 formulario.onsubmit = (evento) =>{
    if (nome.value == ""){
     evento.preventDefault();
@@ -42,4 +43,14 @@ setTimeout(()=>{
     window.location.assign("login.html");
 }, 3000);
 
+}
+
+function femaillogado(){
+  let dados = JSON.parse(sessionStorage.getItem("logado"));
+  if (dados == null){
+     window.location.assign("login.html");
+  }
+  else{
+     emaillogado = dados[0].email;
+  }
 }

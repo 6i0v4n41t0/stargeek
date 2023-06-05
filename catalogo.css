@@ -98,6 +98,11 @@ main{
     flex-direction: column;
 }
 
+div class .cards{
+    width: 230px;
+    height: 200px;
+}
+
 
 footer{
     grid-area: f;
